@@ -1,15 +1,17 @@
 <?php 
 
 get_header();
-?>
+pageBanne(array(
+  'title' => get_the_archive_title( ),
+  'subtitle' => get_the_archive_description()
+)); ?>
+
 <div class="page-banner">
       <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('images/ocean.jpg') ?>);"></div>
       <div class="page-banner__content container container--narrow">
         <h1 class="page-banner__title">
             <?php
             the_archive_title();  // Display Archive Title,  replacement of code written below
-
-
 
         //  Display the page title as header
 

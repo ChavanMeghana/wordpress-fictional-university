@@ -709,7 +709,7 @@ body.login {
 }
 @media (min-width: 960px) {
   .site-header__search-trigger {
-    display: none;
+    display: none !important;
   }
 }
 .site-header__menu-trigger {
